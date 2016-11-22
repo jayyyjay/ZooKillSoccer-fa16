@@ -5,7 +5,8 @@ import GameObj from './GameObj.js';
 import Screen from './Screen.js'; //never directly visible, used to construct visible screens.
 import StartScreen from './StartScreen.js';
 import GameScreen from './GameScreen.js';
-import EndScreen from './EndScreen.js';
+import LostScreen from './LostScreen.js';
+import WonScreen from './WonScreen.js';
 
 //HUD obj
 import HUD from './HUD.js'; //never directly visible, used to construct visible screens.
@@ -26,7 +27,8 @@ console.log('loading game.');
 
 window.startScreen = new StartScreen('Zookill start');
 window.gameScreen = new GameScreen('Zookill Game');
-window.endScreen = new EndScreen('Zookill end');
+window.lostScreen = new LostScreen('Zookill end');
+window.wonscreen = new WonScreen('Zookill end');
 window.score = new Score('game score object');
 window.static = new Static('Static screen object');
 window.dynamic = new Dynamic('Static screen object');

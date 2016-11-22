@@ -8,6 +8,8 @@ export default class GameScreen extends Screen {
 
 	super( name );
 
+	this.dom = document.getElementById('game-screen');
+
 	}// end of construct
 
 }//end of class

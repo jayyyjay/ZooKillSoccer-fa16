@@ -8,6 +8,8 @@ export default class StartScreen extends Screen {
 
 	super( name );
 
+	this.dom = document.getElementById('start-screen');
+
 	}// end of construct
 
 }//end of class

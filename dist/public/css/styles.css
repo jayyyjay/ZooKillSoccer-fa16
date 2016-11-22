@@ -2,6 +2,7 @@
 body {
   background-color: #efe; }
 
+/* initally hide all screens */
 .app-screen {
   display: none; }
 

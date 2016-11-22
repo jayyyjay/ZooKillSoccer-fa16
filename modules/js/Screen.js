@@ -11,4 +11,17 @@ export default class Screen extends GameObj {
 
 	} //end of constructor
 
+	show () {
+
+			this.dom.style.display = "block";
+
+
+	}
+
+	hide () {
+
+		this.dom.style.display = "none";
+
+	}
+
 } //end of class
