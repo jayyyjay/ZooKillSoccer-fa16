@@ -6,6 +6,7 @@ export default class HUD extends GameObj {
 
 		console.log('in HUD');
 
+
 		super( name );
 
 	} //end of constructor

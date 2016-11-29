@@ -10,6 +10,10 @@ export default class LostScreen extends Screen {
 
 	this.dom = document.getElementById('lost-screen');
 
+	this.getStartButton();
+
+	this.getExitButton();
+
 	}// end of construct
 
 }//end of class

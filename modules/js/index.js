@@ -25,18 +25,49 @@ import Player from './Player.js';
 
 console.log('loading game.');
 
-window.startScreen = new StartScreen('Zookill start');
-window.gameScreen = new GameScreen('Zookill Game');
-window.lostScreen = new LostScreen('Zookill end');
-window.wonscreen = new WonScreen('Zookill end');
+//global storage
+window.gameScreens = [];
+
+
+window.startScreen = new StartScreen('start');
+window.gameScreens[ 'start' ] = window.startScreen;
+
+window.gameScreen = new GameScreen('game');
+window.gameScreens[ 'game' ] = window.gameScreen;
+
+window.lostScreen = new LostScreen('lost');
+window.gameScreens[ 'lost' ] = window.lostScreen;
+
+window.wonscreen = new WonScreen('won');
+window.gameScreens[ 'won' ] =window.wonScreen;
+
+
+
 window.score = new Score('game score object');
+
 window.static = new Static('Static screen object');
+
 window.dynamic = new Dynamic('Static screen object');
+
 window.zoo = new Zoo('Zoo object');
+
 window.cages = new Cages('Cages object');
+
 window.animal = new Animal('Animal object');
+
 window.trump = new Trump('Trump object');
+
 window.player = new Player('Player object');
+
+//start game...
+
+// attach event listeners to the buttons on the start screen.
+
+//specify what each button does in code
+
+// Make the start screen visible 
+
+window.startScreen.show();
 
 
 

@@ -8,7 +8,43 @@ body {
 	background-color: $tertiaryColor;
 }
 
+#game{
+	position: relative; 
+}
+
 /* initally hide all screens */
 .app-screen {
+	display:none; 
+	background-color: #000;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 6px;
+	width: 588px;
+	height: 588px;
+
+
+}
+
+.big-type {
+	color: white;
+	font-size: 2.5em;
+}
+
+/*score object */
+
+.hud {
 	display:none;
+	width: 150px;
+	-webkit-box-shadow: 4px 6px 22px 0px rgba(107,52,27,1);
+	-moz-box-shadow: 4px 6px 22px 0px rgba(107,52,27,1);
+	-ms-box-shadow: 4px 6px 22px 0px rgba(107,52,27,1);
+	box-shadow: 4px 6px 22px 0px rgba(107,52,27,1);
+	border-radius: 6px;
+	background-color: white;
+	border: 2px solid black;
+	padding: 4px 4px 4px 8px;
+	position: absolute;
+	top: 0;
+	right: 0;
 }

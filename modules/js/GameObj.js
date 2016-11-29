@@ -36,6 +36,39 @@ export default class GameObj {
 		this.name = newName;
 	}
 
+	show () {
+
+			this.dom.style.display = "block";
+
+
+	}
+
+	hide () {
+
+		this.dom.style.display = "none";
+
+	}
+
+	/**
+	*Load image
+	*css background image
+	*@param {string} imgPath the path to image
+	*/
+	setBackgroundImage( imgPath ) {
+
+		this.dom.style.backgroundImage = "url('" + imgPath + "')";
+
+	}
+
+	setForegroundImage( imgPath ) {
+
+		let img = new Image();
+
+		img.src = imgPath;
+
+		this.dom.appendChild( img );
+	}
+
 	/** 
      * Generate a unique ID for every game object.
      * @link http://stackoverflow.com/questions/105034/create-guid-uuid-in-javascript
