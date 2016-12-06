@@ -4,7 +4,7 @@ export default class Trump extends Dynamic {
 
 	constructor ( name ) {
 
-		console.log('in Trump')
+		console.log('in Trump name:' + name);
 
 	super( name );
 

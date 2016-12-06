@@ -16,6 +16,10 @@ body {
   width: 588px;
   height: 588px; }
 
+  .app-screen h3 {
+    display:none;
+  }
+
 .big-type {
   color: white;
   font-size: 2.5em; }

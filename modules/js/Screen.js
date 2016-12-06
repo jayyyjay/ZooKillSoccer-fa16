@@ -2,11 +2,13 @@ import GameObj from './GameObj.js';
 
 export default class Screen extends GameObj {
 	
-	constructor ( name ) {
+	constructor ( name, screens ) {
 	
 		console.log('in Screen');
 
 		super( name );
+
+		this.screens = screens;
 
 
 	} //end of constructor

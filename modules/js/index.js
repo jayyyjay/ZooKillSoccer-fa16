@@ -28,19 +28,22 @@ console.log('loading game.');
 //global storage
 window.gameScreens = [];
 
+let startScreen = new StartScreen('start', window.gameScreens);
+console.log("STARTSCREEN IS A:" + typeof startScreen)
+window.gameScreens[ 'start' ] = startScreen;
 
-window.startScreen = new StartScreen('start');
-window.gameScreens[ 'start' ] = window.startScreen;
+let gameScreen = new GameScreen('game', window.gameScreens);
+window.gameScreens[ 'game' ] = gameScreen;
 
-window.gameScreen = new GameScreen('game');
-window.gameScreens[ 'game' ] = window.gameScreen;
+let lostScreen = new LostScreen('lost', window.gameScreens);
+window.gameScreens[ 'lost' ] = lostScreen;
 
-window.lostScreen = new LostScreen('lost');
-window.gameScreens[ 'lost' ] = window.lostScreen;
+let wonScreen = new WonScreen('won', window.gameScreens);
+window.gameScreens[ 'won' ] = wonScreen;
 
-window.wonscreen = new WonScreen('won');
-window.gameScreens[ 'won' ] =window.wonScreen;
+console.log("gameScreens:" + typeof window.ganeScreens);
 
+window.score = new Score('game score');
 
 
 window.score = new Score('game score object');
@@ -67,7 +70,7 @@ window.player = new Player('Player object');
 
 // Make the start screen visible 
 
-window.startScreen.show();
+startScreen.show();
 
 
 

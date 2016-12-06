@@ -69,6 +69,25 @@ export default class GameObj {
 		this.dom.appendChild( img );
 	}
 
+	//set size in pixels
+
+	setSize( width, height ) {
+
+		this.dom.style.width = width + 'px';
+		this.dom.style.height = height + 'px';
+
+
+	}
+
+	//set position relative to screen
+
+	setPosition( top, left ) {
+
+		this.dom.style.top = top + 'px';
+		this.dom.style.left = left + 'px';
+
+	}
+
 	/** 
      * Generate a unique ID for every game object.
      * @link http://stackoverflow.com/questions/105034/create-guid-uuid-in-javascript

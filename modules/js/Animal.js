@@ -4,7 +4,7 @@ export default class Animal extends Dynamic {
 
 	constructor ( name ) {
 
-		console.log('in Animal')
+		console.log('in Animal name:' + name);
 
 	super( name );
 

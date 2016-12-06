@@ -6,9 +6,13 @@ export default class WonScreen extends Screen {
 
 		console.log('in WonScreen')
 
-	super( name );
+		super( name );
 
-	this.dom = document.getElementById('won-screen');
+		this.dom = document.getElementById('won-screen');
+
+		//set background
+
+		this.setBackgroundImage('img/screens/won-screen.png');
 
 	}// end of construct
 

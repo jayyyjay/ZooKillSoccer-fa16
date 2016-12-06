@@ -10,6 +10,10 @@ export default class LostScreen extends Screen {
 
 	this.dom = document.getElementById('lost-screen');
 
+	//set background
+
+	this.setBackgroundImage('img/screens/lost-screen.png');
+
 	this.getStartButton();
 
 	this.getExitButton();
