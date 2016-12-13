@@ -36,11 +36,12 @@ export default class GameScreen extends Screen {
 
 		//add trump
 
-		this.trump = new Trump('Donald President Trump');
+		this.trump = new Trump('Donald President Trump', 440, 245);
 
-		//add player
+		//add player y=500 x=245 pixels
 
-		this.player = new Player('myself');
+
+		this.player = new Player( 'myself', 500, 245, this.trump );
 
 	}
 

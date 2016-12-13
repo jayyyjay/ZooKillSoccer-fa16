@@ -46,21 +46,21 @@ console.log("gameScreens:" + typeof window.ganeScreens);
 window.score = new Score('game score');
 
 
-window.score = new Score('game score object');
+//window.score = new Score('game score object');
 
-window.static = new Static('Static screen object');
+//window.static = new Static('Static screen object');
 
-window.dynamic = new Dynamic('Static screen object');
+//window.dynamic = new Dynamic('Static screen object');
 
-window.zoo = new Zoo('Zoo object');
+//window.zoo = new Zoo('Zoo object');
 
-window.cages = new Cages('Cages object');
+//window.cages = new Cages('Cages object');
 
-window.animal = new Animal('Animal object');
+//window.animal = new Animal('Animal object');
 
-window.trump = new Trump('Trump object');
+//window.trump = new Trump('Trump object');
 
-window.player = new Player('Player object');
+//window.player = new Player('Player object');
 
 //start game...
 

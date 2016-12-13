@@ -2,19 +2,15 @@ import Static from './Static.js'
 
 export default class Cages extends Static {
 
-	constructor ( name ) {
+	constructor ( name, screenId ) {
 
-		console.log('in a Zoo Cages, name:' + name);
+		console.log('in a Zoo Cages, name:' + name + 'screenId:' + screenId);
 
 	super( name );
 
-	// grab a cage from the dom
+	this.dom = document.getElementById(screenId);
 
-	this.dom = document.createElement( 'div' );
-
-	//set background image
-
-	this.setBackgroundImage('img/areas/cage.png');
+	this.show();
 
 	}// end of construct
 
